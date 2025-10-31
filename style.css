@@ -8,7 +8,7 @@
    Warning 1: this settings may change your layout.
    Warning 2: keep the * as selector for all tags when uncommenting. */
 /*  * {border: 1px dotted black;}   */
-  
+
 /* Add semi-transparant dark background to all boxes
    The more boxes are on top of eachother the darker tghe background color
    Warning: keep the * as selector for all tags when uncommenting. */
@@ -18,7 +18,7 @@
 
 /* Settings to make it easier for you
    uncomment permanently when you understand the meaning of them */
-   
+
 /* border is included in width en height of boxes */
 /* * { box-sizing: border-box; } */
 
@@ -36,24 +36,42 @@
 
 /* add your css here, feel free to use comments and order them logically for better readability */
 /* ...existing code... */
+:root {
+  --color-header: #6cbdf0;
+  --color-nav: #d6ffd9;
+  --color-main: hwb(224 13% 25%);
+  --color-footer: #06b122;
+  --bg: #ffffff;
+  --text: #222222;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
 body {
-display: grid;
-grid-template-areas:
-"header nav"
-"main main"
-"footer footer";
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 120px 1fr 60px;
+   display: grid;
+   grid-template-areas:
+      "header nav"
+      "main main"
+      "footer footer";
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 120px 1fr 60px;
 }
+
 header {
-grid-area: header;
+   grid-area: header;
+   background-color: var(--color-header);
 }
+
 nav {
-grid-area: nav;
+   grid-area: nav;
+   background-color: var(--color-nav);
 }
+
 main {
-grid-area: main;
+   grid-area: main;
+   background-color: var(--color-main);
 }
+
 footer {
-grid-area: footer;
-}
+   grid-area: footer;
+   background-color: var(--color-footer);
+}                                               
