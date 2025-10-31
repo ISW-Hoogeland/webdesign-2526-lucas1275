@@ -35,12 +35,13 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+/* ...existing code... */
 body {
 display: grid;
-grid-template-area:
-“header nav”
-“main main”
-“footer footer”;
+grid-template-areas:
+"header nav"
+"main main"
+"footer footer";
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 120px 1fr 60px;
 }
@@ -56,4 +57,3 @@ grid-area: main;
 footer {
 grid-area: footer;
 }
-
