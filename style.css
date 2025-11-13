@@ -66,12 +66,23 @@ nav {
    background-color: var(--color-nav);
 }
 
+nav ul {
+   list-style: none;
+   display: flex;
+   gap: 15px;
+}
+
 main {
    grid-area: main;
+   height: 60vh;
    background-color: var(--color-main);
 }
 
 footer {
    grid-area: footer;
    background-color: var(--color-footer);
-}                                               
+}                         
+
+h1 {
+   margin-top: 5px;
+}
