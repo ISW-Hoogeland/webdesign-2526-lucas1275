@@ -37,10 +37,10 @@
 /* add your css here, feel free to use comments and order them logically for better readability */
 /* ...existing code... */
 :root {
-  --color-header: #6cbdf0;
-  --color-nav: #d6ffd9;
-  --color-main: hwb(224 13% 25%);
-  --color-footer: #06b122;
+  --color-header: #0c411d;
+  --color-nav: #0c411d;
+  --color-main: hwb(0 100% 0%);
+  --color-footer: #727472;
   --bg: #ffffff;
   --text: #222222;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -52,7 +52,7 @@ body {
       "header nav"
       "main main"
       "footer footer";
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 4fr 1fr;
    grid-template-rows: 120px 1fr 60px;
 }
 
@@ -69,12 +69,19 @@ nav {
 nav ul {
    list-style: none;
    display: flex;
-   gap: 15px;
+   gap: 20px;
+
+
+}
+
+nav ul li a {
+   color: white;
+   font-size: 20px;
 }
 
 main {
    grid-area: main;
-   height: 60vh;
+   min-height: 60vh;
    background-color: var(--color-main);
 }
 
