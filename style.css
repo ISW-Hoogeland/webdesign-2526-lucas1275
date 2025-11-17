@@ -58,7 +58,7 @@ body {
       "main main"
       "footer footer";
    grid-template-columns: 4fr 1fr;
-   grid-template-rows: 120px 1fr 60px;
+   grid-template-rows: 120px 1fr 100px;
 }
 
 header {
@@ -69,6 +69,8 @@ header {
 
 header h1 {
    color: white;
+  /* shift title a bit down and right */
+  transform: translate(12px, 8px);
 }
 
 nav {
@@ -91,7 +93,7 @@ nav ul li a {
 
 main {
    grid-area: main;
-   min-height: 80vh;
+   min-height: 60vh;
    background-color: transparent;
    padding: 0;
 }
@@ -99,8 +101,13 @@ main {
 footer {
    grid-area: footer;
    background-color: var(--color-header);
-   height: 50px;
-   color: white
+   height: 150px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+   padding: 0 20px;
 }                         
 
 h1 {
@@ -136,4 +143,13 @@ img {
    object-fit: cover;
    display: block;
    max-height: none;
+}
+
+/* Smaller images used on product/contact page */
+.small-img {
+   width: 300px;
+   height: 700px;
+   object-fit: cover;
+   display: inline-block;
+   margin: 8px;
 }
