@@ -147,7 +147,7 @@ img {
 
 /* Smaller images used on product/contact page */
 .small-img {
-   width: 300px;
+   width: 290px;
    height: 600px;
    object-fit: cover;
    display: inline-block;
